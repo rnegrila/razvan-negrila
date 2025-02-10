@@ -44,8 +44,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'Resume Website',
+  description: "A personal presentation website",
 };
 
 /**
@@ -73,7 +73,7 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Pitesti, Romania based <strong className="text-stone-100">Site Reliability Engineer</strong>, currently working
+        I'm a Pitești, Romania based <strong className="text-stone-100">Site Reliability Engineer</strong>, currently working
         at <strong className="text-stone-100">Microsoft</strong>. I specialize in ensuring the reliability and performance of Windows Autopatch and Windows Updates, making sure our users receive seamless and efficient experiences with their Windows devices.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
@@ -105,7 +105,7 @@ export const aboutData: About = {
   to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
   in.`,
   aboutItems: [
-    {label: 'Location', text: 'Pitesti, Arges, Romania', Icon: MapIcon},
+    {label: 'Location', text: 'Pitești, Argeș, Romania', Icon: MapIcon},
     {label: 'Age', text: '29', Icon: CalendarIcon},
     {label: 'Nationality', text: 'Romanian', Icon: FlagIcon},
     {label: 'Interests', text: 'Video Games, Books, Travel', Icon: SparklesIcon},
@@ -342,13 +342,13 @@ export const contact: ContactSection = {
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
+      text: 'Pitești, Argeș, Romania',
+      href: 'https://www.google.com/maps/place/Pite%C8%99ti/@44.8560234,24.8323034,12733m',
     },
     {
       type: ContactType.Instagram,
       text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
+      href: 'https://www.instagram.com/negrila.razvan.1/',
     },
     {
       type: ContactType.Github,
