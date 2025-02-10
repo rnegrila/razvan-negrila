@@ -1,5 +1,5 @@
 import {
-  AcademicCapIcon,
+  /*AcademicCapIcon,*/
   ArrowDownTrayIcon,
   BuildingOffice2Icon,
   CalendarIcon,
@@ -192,12 +192,12 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project title 1',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'LC Drill Pro',
+    description: 'Created a presentation website for a local business.',
+    url: 'https://drillpro.github.io/home/',
     image: porfolioImage1,
   },
-  {
+  /*{
     title: 'Project title 2',
     description: 'Give a short description of your project here.',
     url: 'https://reactresume.com',
@@ -256,7 +256,7 @@ export const portfolioItems: PortfolioItem[] = [
     description: 'Give a short description of your project here.',
     url: 'https://reactresume.com',
     image: porfolioImage11,
-  },
+  },*/
 ];
 
 /**
