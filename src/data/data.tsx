@@ -69,25 +69,22 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `I'm Razvan Negrila.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+        I'm a Pitesti, Romania based <strong className="text-stone-100">Site Reliability Engineer</strong>, currently working
+        at <strong className="text-stone-100">Microsoft</strong>. I specialize in ensuring the reliability and performance of Windows Autopatch and Windows Updates, making sure our users receive seamless and efficient experiences with their Windows devices.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+        In my free time, you can find me playing <strong className="text-stone-100">video games</strong>, spending quality time with my <strong className="text-stone-100">family</strong>, <strong className="text-stone-100">reading</strong>, and <strong className="text-stone-100">traveling </strong>.
       </p>
     </>
   ),
   actions: [
     {
-      href: '/assets/resume.pdf',
-      text: 'Resume',
+      href: '/assets/CV_EN_Razvan_Negrila.pdf',
+      text: 'CV',
       primary: true,
       Icon: ArrowDownTrayIcon,
     },
@@ -108,12 +105,12 @@ export const aboutData: About = {
   to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
   in.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
+    {label: 'Location', text: 'Pitesti, Arges, Romania', Icon: MapIcon},
     {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
+    {label: 'Nationality', text: 'Romanian', Icon: FlagIcon},
+    {label: 'Interests', text: 'Video Games, Books, Travel', Icon: SparklesIcon},
+    /*{label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},*/
+    {label: 'Employment', text: 'Microsoft Romania', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -125,16 +122,16 @@ export const skills: SkillGroup[] = [
     name: 'Spoken languages',
     skills: [
       {
-        name: 'English',
+        name: 'Romanian',
         level: 10,
       },
       {
         name: 'French',
-        level: 4,
+        level: 10,
       },
       {
-        name: 'Spanish',
-        level: 3,
+        name: 'English',
+        level: 9,
       },
     ],
   },
@@ -172,7 +169,7 @@ export const skills: SkillGroup[] = [
       },
     ],
   },
-  {
+  /*{
     name: 'Mobile development',
     skills: [
       {
@@ -188,7 +185,7 @@ export const skills: SkillGroup[] = [
         level: 3,
       },
     ],
-  },
+  },*/
 ];
 
 /**
@@ -340,8 +337,8 @@ export const contact: ContactSection = {
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'negrila.razvan@gmail.com',
+      href: 'mailto:negrila.razvan@gmail.com',
     },
     {
       type: ContactType.Location,
@@ -355,8 +352,8 @@ export const contact: ContactSection = {
     },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'rnegrila',
+      href: 'https://github.com/rnegrila',
     },
   ],
 };
@@ -365,9 +362,8 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/rnegrila'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/razvan-negrila/'},
+  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/negrila.razvan.1/'},
+  {label: 'X', Icon: TwitterIcon, href: 'https://x.com/NegrilaRazvan'},
 ];
