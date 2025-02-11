@@ -11,10 +11,9 @@ import {
 import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
-import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
+/*import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
 import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
 import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
@@ -23,7 +22,7 @@ import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
 import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
 import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
 import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
-import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
+import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';*/
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -38,6 +37,9 @@ import {
   TestimonialSection,
   TimelineItem,
 } from './dataDef';
+import FacebookIcon from '../components/Icon/FacebookIcon';
+import type {Certifications} from './dataDef';
+import azureFundamentalsImage from '../images/certifications/microsoft-certified-fundamentals-badge.png';
 
 /**
  * Page meta data
@@ -57,6 +59,7 @@ export const SectionId = {
   Portfolio: 'portfolio',
   Resume: 'resume',
   Skills: 'skills',
+  Certifications: 'certifications',
   Stats: 'stats',
   Testimonials: 'testimonials',
 } as const;
@@ -72,7 +75,7 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Pitești, Romania based <strong className="text-stone-100">Site Reliability Engineer</strong>, currently working
+        I'm a Pitești, Romania based <strong className="text-stone-100">Site Reliability Engineer II</strong>, currently working
         at <strong className="text-stone-100">Microsoft</strong>. I specialize in ensuring the reliability and performance of Windows Autopatch and Windows Updates, making sure our users receive seamless and efficient experiences with their Windows devices.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
@@ -188,6 +191,18 @@ export const skills: SkillGroup[] = [
 ];
 
 /**
+ * Certifications section
+ */
+export const certifications: Certifications[] = [
+  {
+    name: 'Azure Administrator',
+    issuedBy: 'Microsoft',
+    image: azureFundamentalsImage,
+    verificationUrl: 'https://learn.microsoft.com/api/credentials/share/en-us/YourName/12345',
+  },
+];
+
+/**
  * Portfolio section
  */
 export const portfolioItems: PortfolioItem[] = [
@@ -264,24 +279,18 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
-  },
-  {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'June 2014',
+    location: 'National College "Ion C. Brătianu"',
+    title: 'Baccaulareate',
+    content: <p>4 years of French bilingual Mathematics and Computer Science</p>,
   },
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'April 2024 - Present',
+    location: 'Microsoft',
+    title: 'Site Reliability Engineer II',
     content: (
       <p>
         Describe work, special projects, notable achievements, what technologies you have been working with, and
@@ -290,9 +299,9 @@ export const experience: TimelineItem[] = [
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: 'June 2022 - April 2024',
+    location: 'Microsoft',
+    title: 'Site Reliability Engineer',
     content: (
       <p>
         Describe work, special projects, notable achievements, what technologies you have been working with, and
@@ -332,7 +341,7 @@ export const testimonial: TestimonialSection = {
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  description: 'If you want to get in touch with me, just write me a message or reach out to me via one of the below channels.',
   items: [
     {
       type: ContactType.Email,
@@ -363,6 +372,6 @@ export const contact: ContactSection = {
 export const socialLinks: Social[] = [
   {label: 'Github', Icon: GithubIcon, href: 'https://github.com/rnegrila'},
   {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/razvan-negrila/'},
+  {label: 'Facebook', Icon: FacebookIcon, href: 'https://www.facebook.com/negrila.razvan.1'},
   {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/negrila.razvan.1/'},
-  {label: 'X', Icon: TwitterIcon, href: 'https://x.com/NegrilaRazvan'},
 ];

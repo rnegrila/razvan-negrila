@@ -148,3 +148,18 @@ export interface Social {
   Icon: FC<IconProps>;
   href: string;
 }
+
+/**
+ * Certifications
+ */
+
+export interface Certifications {
+  name: string;
+  issuedBy: string;
+  image: string;
+  verificationUrl?: string;
+}
+
+export interface CertificationsSection {
+  certifications: Certifications[];
+}
