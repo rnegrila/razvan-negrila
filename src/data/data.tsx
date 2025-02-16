@@ -41,7 +41,7 @@ import {
 import FacebookIcon from '../components/Icon/FacebookIcon';
 import type {Certifications} from './dataDef';
 import azureFundamentalsImage from '../images/certifications/microsoft-certified-fundamentals-badge.png';
-import { calculatePeriod, createTimelineSubtitle, extractDates, extractDatesFromString } from '../components/Sections/Resume/DateUtils';
+import { createTimelineSubtitle } from '../components/Sections/Resume/DateUtils';
 
 /**
  * Page meta data
@@ -81,7 +81,7 @@ export const heroData: Hero = {
         at <strong className="text-stone-100">Microsoft</strong>. I specialize in ensuring the reliability and performance of Windows Autopatch and Windows Updates, making sure our users receive seamless and efficient experiences with their Windows devices.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time, you can find me playing <strong className="text-stone-100">video games</strong>, spending quality time with my <strong className="text-stone-100">family</strong>, <strong className="text-stone-100">reading</strong>, and <strong className="text-stone-100">traveling </strong>.
+        In my free time, you can find me playing <strong className="text-stone-100">video games</strong>, spending quality time with my <strong className="text-stone-100">family</strong>, <strong className="text-stone-100">reading</strong>, <strong className="text-stone-100">traveling </strong> to awesome places and watching <strong className="text-stone-100">movies</strong>.
       </p>
     </>
   ),
@@ -112,7 +112,7 @@ export const aboutData: About = {
     {label: 'Location', text: 'Pitești, Argeș, Romania', Icon: MapIcon},
     {label: 'Age', text: '29', Icon: CalendarIcon},
     {label: 'Nationality', text: 'Romanian', Icon: FlagIcon},
-    {label: 'Interests', text: 'Video Games, Books, Travel', Icon: SparklesIcon},
+    {label: 'Interests', text: 'Video Games, Books, Travel, Movies', Icon: SparklesIcon},
     /*{label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},*/
     {label: 'Employment', text: 'Microsoft Romania', Icon: BuildingOffice2Icon},
   ],

@@ -24,7 +24,7 @@ const TimelineItem: FC<{item: TimelineItem}> = memo(({item}) => {
 });
 
 const EducationTimelineItem: FC<{item: TimelineItem}> = memo(({item}) => {
-  const {title, date, location, content, subtitle} = item;
+  const {title, date, location, content} = item;
   return (
     <div className="flex flex-col pb-8 text-center last:pb-0 md:text-left">
       <div className="flex flex-col pb-4">
