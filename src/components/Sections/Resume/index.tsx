@@ -3,7 +3,7 @@ import {education, experience, SectionId, skills, certifications} from '../../..
 import Section from '../../Layout/Section';
 import ResumeSection from './ResumeSection';
 import {SkillGroup} from './Skills';
-import TimelineItem from './TimelineItem';
+import {TimelineItem, EducationTimelineItem} from './TimelineItem';
 import {CertificationGroup} from './Certifications';
 
 const Resume: FC = memo(() => {
@@ -28,7 +28,7 @@ const Resume: FC = memo(() => {
         </ResumeSection>
         <ResumeSection title="Education">
           {education.map((item, index) => (
-            <TimelineItem item={item} key={`${item.title}-${index}`} />
+            <EducationTimelineItem item={item} key={`${item.title}-${index}`} />
           ))}
         </ResumeSection>
       </div>

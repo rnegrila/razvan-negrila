@@ -36,6 +36,7 @@ import {
   Social,
   TestimonialSection,
   TimelineItem,
+  EducationTimelineItem
 } from './dataDef';
 import FacebookIcon from '../components/Icon/FacebookIcon';
 import type {Certifications} from './dataDef';
@@ -278,7 +279,7 @@ export const portfolioItems: PortfolioItem[] = [
 /**
  * Resume section -- TODO: Standardize resume contact format or offer MDX
  */
-export const education: TimelineItem[] = [
+export const education: EducationTimelineItem[] = [
   {
     date: 'June 2014',
     location: 'National College "Ion C. Brătianu"',

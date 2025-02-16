@@ -84,6 +84,17 @@ export interface PortfolioItem {
 }
 
 /**
+ * Education section
+ */
+
+export type EducationTimelineItem = {
+  date: string;
+  location: string;
+  title: string;
+  content: JSX.Element;
+};
+
+/**
  * Resume section
  */
 export type TimelineItem = {
