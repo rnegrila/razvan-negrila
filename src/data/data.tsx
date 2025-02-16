@@ -397,14 +397,14 @@ export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
     {
-      name: 'John Doe',
-      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
+      name: 'Peter Parker',
+      text: 'Working with Razvan is like having your own friendly neighborhood problem-solver! His tech-sense is always tingling when there\'s a challenge, and he tackles Windows issues faster than I can shoot webs. Not only does he keep our services running smoothly, but he also brings the perfect balance of professionalism and fun to the team. With great power comes great reliability, and Razvan definitely delivers on both fronts!',
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
     },
     {
-      name: 'Jane Doe',
-      text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
+      name: "Tony Stark",
+      text: "Listen up - and I don't say this often - but this guy might actually be as smart as I am. His infrastructure is as reliable as my Mark LXXXV suit, and trust me, that's saying something. He automates systems faster than JARVIS and keeps services running smoother than my facial hair. Definitely hire him and double his salary expectations - he's giving me a run for my money in the genius department. And coming from me, that's basically a Nobel Prize recommendation.",
+      image: "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg",
     },
     {
       name: 'Someone else',
