@@ -288,32 +288,100 @@ export const education: TimelineItem[] = [
 
 export const experience: TimelineItem[] = [
   {
-    date: 'April 2024 - Present',
-    location: 'Microsoft',
+    date: 'March 2024 - Present',
+    location: 'Microsoft Romania',
     title: 'Site Reliability Engineer II',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        Provide expert technical support by analyzing complex customer incidents and developing innovative solutions to enhance system functionality. Mentor junior engineers, deliver educational sessions, and actively participate in initiatives like academic projects and conferences.
       </p>
     ),
   },
   {
-    date: 'June 2022 - April 2024',
-    location: 'Microsoft',
+    date: 'June 2022 - February 2024',
+    location: 'Microsoft Romania',
     title: 'Site Reliability Engineer',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        Analyzed customer-reported incidents, identified solutions within available resources, and optimized software performance. Engaged in professional development, collaborated with senior colleagues, and contributed to knowledge sharing within the team.
       </p>
     ),
   },
+  {
+    date: 'March 2022 - June 2022',
+    location: 'Societe Generale Global Solution Centre',
+    title: 'Operational IT Risk Analyst',
+    content: (
+      <p>
+        Ensured the implementation of Level 1 Permanent Controls for Global Technology Services. Managed access rights, updated control plans, conducted quality assurance on evaluations, and provided analytical support to Operational Risk Managers.
+      </p>
+    ),
+  },
+  {
+    date: 'November 2020 - March 2022',
+    location: 'Stefanini Romania SRL',
+    title: 'Support Desk Engineer',
+    content: (
+      <p>
+        Provided remote technical support to clients, resolving software and hardware issues and troubleshooting network problems. Assisted with ticket management, escalations, and collaborated with team members to deliver effective solutions.
+      </p>
+    ),
+  },
+  {
+    date: 'September 2019 - November 2020',
+    location: 'Automobile Dacia SA, Mioveni, Romania',
+    title: 'Customer Service Analyst',
+    content: (
+      <p>
+        Ensured efficient spare parts shipments and maintained high-quality customer service. Acted as the liaison between international clients and central warehouses in France. Managed sales administration tasks such as order placement, dispatch monitoring, invoicing, and customs operations. Utilized tools like Spotfire for analysis and reporting to optimize logistics flows and procedures.
+      </p>
+    ),
+  },
+  {
+    date: 'February 2019 - September 2019',
+    location: 'Webhelp Romania',
+    title: 'Team Leader',
+    content: (
+      <p>
+        Led a team of Client Advisors, overseeing project management and resource allocation. Prepared daily and monthly reports for clients, participated in conferences, and facilitated trainings and coaching sessions. Conducted recruitment assessments and implemented strategies to improve project results.
+      </p>
+    ),
+  },
+  {
+    date: 'October 2017 - February 2019',
+    location: 'Webhelp Romania',
+    title: 'Continuous Improvement Department Expert (SWAT Team)',
+    content: (
+      <p>
+        Assisted advisors in developing growth plans alongside team leaders. Supported team objectives through training, individual coaching, and qualitative analysis. Handled cases to enhance productivity across projects, providing ideas for procedural improvements and organizational efficiency.
+      </p>
+    ),
+  },
+  {
+    date: 'August 2017 - October 2017',
+    location: 'Amoma SRL',
+    title: 'Customer Advisor',
+    content: (
+      <p>
+        Provided commercial assistance in online hotel reservations for customers worldwide via email and phone. Resolved inquiries and issues, ensuring customer satisfaction in the tourism sector.
+      </p>
+    ),
+  },
+  {
+    date: 'October 2014 - August 2017',
+    location: 'Webhelp Romania',
+    title: 'Client Advisor',
+    content: (
+      <p>
+        Offered technical and commercial support in the telecom field to French customers through email, chat, instant messaging, and calls. Addressed customer needs effectively, enhancing client engagement and service quality.
+      </p>
+    ),
+  },  
 ];
 
 /**
  * Testimonial section
- */
+*/
 export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
