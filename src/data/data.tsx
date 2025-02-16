@@ -40,6 +40,7 @@ import {
 import FacebookIcon from '../components/Icon/FacebookIcon';
 import type {Certifications} from './dataDef';
 import azureFundamentalsImage from '../images/certifications/microsoft-certified-fundamentals-badge.png';
+import { calculatePeriod, createTimelineSubtitle, extractDates, extractDatesFromString } from '../components/Sections/Resume/DateUtils';
 
 /**
  * Page meta data
@@ -296,6 +297,7 @@ export const experience: TimelineItem[] = [
         Provide expert technical support by analyzing complex customer incidents and developing innovative solutions to enhance system functionality. Mentor junior engineers, deliver educational sessions, and actively participate in initiatives like academic projects and conferences.
       </p>
     ),
+    subtitle: createTimelineSubtitle('March 2024 - Present')
   },
   {
     date: 'June 2022 - February 2024',
@@ -306,6 +308,7 @@ export const experience: TimelineItem[] = [
         Analyzed customer-reported incidents, identified solutions within available resources, and optimized software performance. Engaged in professional development, collaborated with senior colleagues, and contributed to knowledge sharing within the team.
       </p>
     ),
+    subtitle: createTimelineSubtitle('June 2022 - February 2024')
   },
   {
     date: 'March 2022 - June 2022',
@@ -316,6 +319,7 @@ export const experience: TimelineItem[] = [
         Ensured the implementation of Level 1 Permanent Controls for Global Technology Services. Managed access rights, updated control plans, conducted quality assurance on evaluations, and provided analytical support to Operational Risk Managers.
       </p>
     ),
+    subtitle: createTimelineSubtitle('March 2022 - June 2022')
   },
   {
     date: 'November 2020 - March 2022',
@@ -326,6 +330,7 @@ export const experience: TimelineItem[] = [
         Provided remote technical support to clients, resolving software and hardware issues and troubleshooting network problems. Assisted with ticket management, escalations, and collaborated with team members to deliver effective solutions.
       </p>
     ),
+    subtitle: createTimelineSubtitle('November 2020 - March 2022')
   },
   {
     date: 'September 2019 - November 2020',
@@ -336,6 +341,7 @@ export const experience: TimelineItem[] = [
         Ensured efficient spare parts shipments and maintained high-quality customer service. Acted as the liaison between international clients and central warehouses in France. Managed sales administration tasks such as order placement, dispatch monitoring, invoicing, and customs operations. Utilized tools like Spotfire for analysis and reporting to optimize logistics flows and procedures.
       </p>
     ),
+    subtitle: createTimelineSubtitle('September 2019 - November 2020')
   },
   {
     date: 'February 2019 - September 2019',
@@ -346,6 +352,7 @@ export const experience: TimelineItem[] = [
         Led a team of Client Advisors, overseeing project management and resource allocation. Prepared daily and monthly reports for clients, participated in conferences, and facilitated trainings and coaching sessions. Conducted recruitment assessments and implemented strategies to improve project results.
       </p>
     ),
+    subtitle: createTimelineSubtitle('February 2019 - September 2019')
   },
   {
     date: 'October 2017 - February 2019',
@@ -356,6 +363,7 @@ export const experience: TimelineItem[] = [
         Assisted advisors in developing growth plans alongside team leaders. Supported team objectives through training, individual coaching, and qualitative analysis. Handled cases to enhance productivity across projects, providing ideas for procedural improvements and organizational efficiency.
       </p>
     ),
+    subtitle: createTimelineSubtitle('October 2017 - February 2019')
   },
   {
     date: 'August 2017 - October 2017',
@@ -366,17 +374,19 @@ export const experience: TimelineItem[] = [
         Provided commercial assistance in online hotel reservations for customers worldwide via email and phone. Resolved inquiries and issues, ensuring customer satisfaction in the tourism sector.
       </p>
     ),
+    subtitle: createTimelineSubtitle('August 2017 - October 2017')
   },
   {
     date: 'October 2014 - August 2017',
     location: 'Webhelp Romania',
     title: 'Client Advisor',
-    content: (
+      content: (
       <p>
         Offered technical and commercial support in the telecom field to French customers through email, chat, instant messaging, and calls. Addressed customer needs effectively, enhancing client engagement and service quality.
       </p>
     ),
-  },  
+    subtitle: createTimelineSubtitle('October 2014 - August 2017')  
+  },
 ];
 
 /**

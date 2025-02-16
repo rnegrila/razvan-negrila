@@ -86,12 +86,13 @@ export interface PortfolioItem {
 /**
  * Resume section
  */
-export interface TimelineItem {
+export type TimelineItem = {
   date: string;
   location: string;
   title: string;
   content: JSX.Element;
-}
+  subtitle?: () => string;
+};
 
 /**
  * Testimonial section
