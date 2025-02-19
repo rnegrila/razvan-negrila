@@ -40,7 +40,6 @@ import {
 } from './dataDef';
 import FacebookIcon from '../components/Icon/FacebookIcon';
 import type {Certifications} from './dataDef';
-import azureFundamentalsImage from '../images/certifications/microsoft-certified-fundamentals-badge.png';
 import { createTimelineSubtitle } from '../components/Sections/Resume/DateUtils';
 
 /**
@@ -231,10 +230,16 @@ export const skills: SkillGroup[] = [
  */
 export const certifications: Certifications[] = [
   {
-    name: 'Azure Administrator',
+    name: 'Microsoft Certified: Azure AI Fundamentals',
     issuedBy: 'Microsoft',
-    image: azureFundamentalsImage,
-    verificationUrl: 'https://learn.microsoft.com/api/credentials/share/en-us/YourName/12345',
+    image: 'https://learn.microsoft.com/media/learn/certification/badges/microsoft-certified-fundamentals-badge.svg',
+    verificationUrl: 'https://learn.microsoft.com/en-us/users/razvannegrila-5065/credentials/certification/azure-ai-fundamentals?tab=credentials-tab',
+  },
+  {
+    name: 'Microsoft Certified: Azure Fundamentals',
+    issuedBy: 'Microsoft',
+    image: 'https://learn.microsoft.com/media/learn/certification/badges/microsoft-certified-fundamentals-badge.svg',
+    verificationUrl: 'https://learn.microsoft.com/en-us/users/razvannegrila-5065/credentials/certification/azure-fundamentals?tab=credentials-tab',
   },
 ];
 
