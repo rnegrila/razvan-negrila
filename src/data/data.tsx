@@ -140,56 +140,90 @@ export const skills: SkillGroup[] = [
     ],
   },
   {
-    name: 'Frontend development',
+    name: 'Automation & Scripting',
     skills: [
       {
-        name: 'React',
-        level: 9,
+        name: 'Powershell',
+        level: 8,
       },
       {
-        name: 'Typescript',
+        name: 'Python',
         level: 7,
-      },
-      {
-        name: 'GraphQL',
-        level: 6,
       },
     ],
   },
   {
-    name: 'Backend development',
+    name: 'Frontend Development',
     skills: [
       {
-        name: 'Node.js',
+        name: 'HTML5',
         level: 8,
       },
       {
-        name: 'Rust',
-        level: 5,
+        name: 'CSS3/SCSS',
+        level: 7,
       },
       {
-        name: 'Golang',
-        level: 4,
+        name: 'JavaScript/TypeScript',
+        level: 7,
       },
     ],
   },
-  /*{
-    name: 'Mobile development',
+  {
+    name: 'Cloud Platform & Services',
     skills: [
       {
-        name: 'React Native',
+        name: 'Microsoft Azure',
+        level: 8,
+      },
+      {
+        name: 'Azure AD/Entra ID',
+        level: 8,
+      },
+      {
+        name: 'Azure DevOps',
+        level: 8,
+      },
+    ],
+  },
+  {
+    name: 'Enterprise Management',
+    skills: [
+      {
+        name: 'Microsoft Intune',
+        level: 8,
+      },
+      {
+        name: 'Windows Autopatch',
         level: 9,
       },
       {
-        name: 'Flutter',
-        level: 4,
+        name: 'Windows Updates',
+        level: 9,
       },
       {
-        name: 'Swift',
-        level: 3,
+        name: 'Device Management',
+        level: 8,
       },
     ],
-  },*/
+  },
+  {
+    name: 'Methodologies & Practices',
+    skills: [
+      {
+        name: 'Agile/Scrum',
+        level: 10,
+      },
+      {
+        name: 'CI/CD',
+        level: 7,
+      },
+      {
+        name: 'Git/Version Control',
+        level: 7,
+      },
+    ],
+  },  
 ];
 
 /**
