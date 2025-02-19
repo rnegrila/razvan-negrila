@@ -38,7 +38,7 @@ interface HeroActionItem {
  * About section
  */
 export interface About {
-  profileImageSrc?: string;
+  profileImageSrc: string;
   description: string;
   aboutItems: AboutItem[];
 }
