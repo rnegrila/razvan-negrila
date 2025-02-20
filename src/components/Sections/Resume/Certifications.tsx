@@ -9,8 +9,7 @@ export const CertificationItem: FC<{certification: CertificationType}> = memo(({
         className="flex items-center gap-4 hover:bg-neutral-200 p-2 rounded-lg transition-colors"
         href={verificationUrl}
         target="_blank"
-        rel="noopener noreferrer"
-      >
+        rel="noopener noreferrer">
         <img alt={name} className="h-16 w-16" src={image} />
         <div className="flex flex-col">
           <span className="text-sm font-medium text-neutral-800">{name}</span>
@@ -27,10 +26,7 @@ export const CertificationGroup: FC<{certifications: CertificationType[]}> = mem
   return (
     <div className="flex flex-col gap-4">
       {certifications.map((certification, index) => (
-        <CertificationItem 
-          key={`${certification.name}-${index}`}
-          certification={certification}
-        />
+        <CertificationItem key={`${certification.name}-${index}`} certification={certification} />
       ))}
     </div>
   );

@@ -8,18 +8,15 @@
     "ecmaVersion": 2020,
     "sourceType": "module"
   },
-  "plugins": ["@typescript-eslint", "simple-import-sort", "import", "react", "react-memo", "react-hooks"],
+  "plugins": ["@typescript-eslint", "simple-import-sort"],
   "extends": [
-    "eslint:recommended",
-    "plugin:@typescript-eslint/eslint-recommended",
+    "next/core-web-vitals",
     "plugin:@typescript-eslint/recommended",
-    "plugin:@next/next/recommended",
     "prettier"
   ],
   "ignorePatterns": ["*/public", "*/node_modules/*", "*/.next/*", "*/dist/*"],
   "rules": {
     "react/display-name": "off",
-    // The next two rules should be errors. But for now we"ll leave them as warnings since this will take a while
     "react-memo/require-usememo": "error",
     "react-memo/require-memo": "error",
     "react-hooks/rules-of-hooks": "error",
@@ -38,10 +35,15 @@
     "import/order": "off",
     "no-irregular-whitespace": "off",
     "@typescript-eslint/no-unused-vars": ["warn", {"argsIgnorePattern": "^_"}],
-    "object-curly-spacing": ["error", "never"],
+    "object-curly-spacing": ["error", "always"],
     "react/jsx-curly-brace-presence": [2, "never"],
     "react/jsx-no-duplicate-props": "error",
-    "react/jsx-sort-props": "error",
+    "react/jsx-sort-props": ["error", {
+      "callbacksLast": true,
+      "shorthandFirst": true,
+      "ignoreCase": true,
+      "reservedFirst": true,
+    }],
     "react/react-in-jsx-scope": "off",
     "react/no-unescaped-entities": "off",
     "simple-import-sort/exports": "error",
@@ -53,7 +55,6 @@
   },
   "settings": {
     "react": {
-      "pragma": "React",
       "version": "detect"
     }
   },
