@@ -46,8 +46,8 @@ import {createTimelineSubtitle} from '../components/Sections/Resume/DateUtils';
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'Resume Website',
-  description: 'A personal presentation website',
+  title: 'Razvan Negrila | Site Reliability Engineer at Microsoft',
+  description: 'Experienced Site Reliability Engineer at Microsoft, leveraging AI and ML for intelligent automation. Specialist in Windows Autopatch and Windows Updates, Cloud Infrastructure, and System Reliability Optimization.',
 };
 
 /**
