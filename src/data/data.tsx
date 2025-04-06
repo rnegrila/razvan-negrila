@@ -33,13 +33,13 @@ import {
   HomepageMeta,
   PortfolioItem,
   SkillGroup,
+  Certifications,
   Social,
   TestimonialSection,
   TimelineItem,
   EducationTimelineItem,
 } from './dataDef';
 import FacebookIcon from '../components/Icon/FacebookIcon';
-import type {Certifications} from './dataDef';
 import {createTimelineSubtitle} from '../components/Sections/Resume/DateUtils';
 
 /**
