@@ -10,9 +10,8 @@ import {useNavObserver} from '../../hooks/useNavObserver';
 export const headerID = 'headerNav';
 
 const Header: FC = memo(() => {
-  const [currentSection, setCurrentSection] = useState<SectionId | null>(null);
-  const navSections = useMemo(
-    () => [SectionId.About, SectionId.Resume, SectionId.Portfolio, SectionId.Testimonials, SectionId.Contact],
+  const [currentSection, setCurrentSection] = useState<SectionId | null>(null);  const navSections = useMemo(
+    () => [SectionId.About, SectionId.Resume, SectionId.Certifications, SectionId.Portfolio, SectionId.Testimonials, SectionId.Contact],
     [],
   );
 
@@ -36,6 +35,12 @@ const DesktopNav: FC<{navSections: SectionId[]; currentSection: SectionId | null
       '-m-1.5 p-1.5 rounded-md font-bold first-letter:uppercase hover:transition-colors hover:duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 sm:hover:text-orange-500 text-neutral-100';
     const activeClass = classNames(baseClass, 'text-orange-500');
     const inactiveClass = classNames(baseClass, 'text-neutral-100');
+    
+    const onCertificationsClick = (e: React.MouseEvent) => {
+      e.preventDefault();
+      document.getElementById(SectionId.Certifications)?.scrollIntoView({ behavior: 'smooth' });
+    };
+    
     return (
       <header className="fixed top-0 z-50 hidden w-full bg-neutral-900/50 p-4 backdrop-blur sm:block" id={headerID}>
         <nav className="flex justify-center gap-x-8">
@@ -47,7 +52,13 @@ const DesktopNav: FC<{navSections: SectionId[]; currentSection: SectionId | null
               key={section}
               section={section}
             />
-          ))}
+          ))}          <Link
+            className={inactiveClass}
+            href={`/#${SectionId.Certifications}`}
+            key={SectionId.Certifications}
+            onClick={onCertificationsClick}>
+            Certifications
+          </Link>
         </nav>
       </header>
     );
@@ -94,8 +105,7 @@ const MobileNav: FC<{navSections: SectionId[]; currentSection: SectionId | null}
               enterTo="translate-x-0"
               leave="transition ease-in-out duration-300 transform"
               leaveFrom="translate-x-0"
-              leaveTo="-translate-x-full">
-              <div className="relative w-4/5 bg-stone-800">
+              leaveTo="-translate-x-full">              <div className="relative w-4/5 bg-stone-800">
                 <nav className="mt-5 flex flex-col gap-y-2 px-2">
                   {navSections.map(section => (
                     <NavItem
@@ -107,6 +117,17 @@ const MobileNav: FC<{navSections: SectionId[]; currentSection: SectionId | null}
                       section={section}
                     />
                   ))}
+                  <Link
+                    className={inactiveClass}
+                    href={`/#${SectionId.Certifications}`}
+                    key={SectionId.Certifications}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      toggleOpen();
+                      document.getElementById(SectionId.Certifications)?.scrollIntoView({ behavior: 'smooth' });
+                    }}>
+                    Certifications
+                  </Link>
                 </nav>
               </div>
             </Transition.Child>

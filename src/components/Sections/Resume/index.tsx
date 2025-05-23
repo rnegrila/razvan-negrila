@@ -23,7 +23,9 @@ const Resume: FC = memo(() => {
           </div>
         </ResumeSection>
         <ResumeSection title="Certifications">
-          <CertificationGroup certifications={certifications} />
+          <div id={SectionId.Certifications} className="scroll-mt-24">
+            <CertificationGroup certifications={certifications} />
+          </div>
         </ResumeSection>
         <ResumeSection title="Education">
           {education.map((item, index) => (
