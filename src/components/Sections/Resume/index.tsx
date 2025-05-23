@@ -21,9 +21,8 @@ const Resume: FC = memo(() => {
               <SkillGroup key={`${skillgroup.name}-${index}`} skillGroup={skillgroup} />
             ))}
           </div>
-        </ResumeSection>
-        <ResumeSection title="Certifications">
-          <div id={SectionId.Certifications} className="scroll-mt-24">
+        </ResumeSection>        <ResumeSection title="Certifications">
+          <div id={SectionId.Certifications} className="scroll-mt-24 pt-16 -mt-16">
             <CertificationGroup certifications={certifications} />
           </div>
         </ResumeSection>
